@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Stay Organized. Get More Done.</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="dist/output.css">
+    <style>
+        /* Custom styles for the gradient background in the Hero and Pro Plan */
+        /* Teal/Green Gradient, matching the second Arabic image */
+        .hero-gradient {
+            background-image: linear-gradient(135deg, #2dd4bf 0%, #10b981 100%);
+        }
+
+        .pro-gradient {
+            background-image: linear-gradient(135deg, #10b981 0%, #2dd4bf 100%);
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-sans text-gray-800 scroll-smooth ">
+
+    <header class="hero-gradient md:h-screen text-white pt-4 pb-20 relative overflow-hidden" data-aos="fade-down">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 11a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                    </path>
+                </svg>
+                <span class="text-2xl font-bold">TaskFlow</span>
+            </div>
+
+            <div class="hidden sm:flex space-x-6 text-sm">
+                <a href="#features" class="hover:text-gray-200 font-bold cursor-pointer">Features</a>
+                <a href="#reviews" class="hover:text-gray-200 font-bold cursor-pointer">Reviews</a>
+                <a href="#pricing" class="hover:text-gray-200 font-bold cursor-pointer">Pricing</a>
+            </div>
+
+            <a href="#"
+                class="border border-white px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-teal-600 transition duration-300">Sign
+                Up</a>
+        </nav>
+
+        <div class="container mx-auto px-4 text-center mt-30 relative z-10">
+            <h1 class=" text-5xl lg:text-7xl font-extrabold mb-10">TaskFlow</h1>
+            <p class="text-3xl lg:text-4xl font-semibold mb-6">Stay organized. Get more done.</p>
+            <p class="max-w-xl mx-auto mb-10 text-lg opacity-90">
+                Transform your productivity with intelligent task management, seamless collaboration, and powerful
+                planner tools.
+            </p>
+            <a href="#"
+                class="bg-white text-teal-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300 shadow-xl flex items-center justify-center w-max mx-auto hover:scale-105 ">
+                Get Started
+                <svg class="w-4 h-4 ms-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                </svg>
+            </a>
+        </div>
+
+    </header>
+
+    <hr />
+
+    <section class="py-20 md:h-screen" data-aos="fade-down" id="features">
+
+        <div class="container mx-auto px-4 text-center lg:mt-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-3">Powerful Features</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-16">
+                Everything you need to manage tasks efficiently and collaborate seamlessly with your team.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    data-aos="fade-down-left" class="p-10 border border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center rounded-lg mx-auto mb-4 text-2xl bg-blue-100 text-blue-600">
+                        <i class="fas fa-brain "></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Smart Task Management</h3>
+                    <p class="text-gray-500 text-sm">Organize, prioritize, and track tasks with AI-powered suggestions
+                        and custom workflows.</p>
+                </div>
+
+                <div data-aos="fade-down"
+                    class="p-10 border border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+                    <div
+                        class="w-16 h-16 text-2xl flex items-center justify-center rounded-lg mx-auto mb-4 bg-green-100 text-green-600">
+                        <i class="far fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Deadline Reminders</h3>
+                    <p class="text-gray-500 text-sm">Never miss a deadline with automated, customizable reminders sent
+                        directly to your preferred device.</p>
+                </div>
+
+                <div data-aos="fade-down-right"
+                    class="p-10 border border-gray-100 rounded-xl shadow-lg hover:shadow-xl transition duration-300 bg-white">
+                    <div
+                        class="w-16 h-16 text-2xl flex items-center justify-center rounded-lg mx-auto mb-4 bg-violet-100 text-violet-600">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Team Collaboration</h3>
+                    <p class="text-gray-500 text-sm">Share tasks, files, and feedback instantly with built-in chat and
+                        project-level permissions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="py-20 bg-gray-50 " data-aos="fade-down" id="reviews">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-10">What Our Users Say</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-16">
+                Join thousands of satisfied users who have transformed their productivity.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div data-aos="fade-down-left"
+                    class="p-6 bg-white border border-gray-200 rounded-xl shadow-md flex flex-col items-start text-start">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 me-3">
+                            <img src="img/image1.png" alt="" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Sarah Chan</p>
+                            <p class="text-xs text-gray-500">Marketing Specialist</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 text-sm italic">"TaskFlow has completely changed how my team manages
+                        our campaign tasks. The smart organization is a lifesaver."</p>
+                    <div class="text-yellow-400 text-xl">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <div data-aos="fade-down"
+                    class="p-6 bg-white border border-gray-200 rounded-xl shadow-md flex flex-col items-start text-start">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 me-3">
+                            <img src="img/image2.png" alt="" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Mike Johnson</p>
+                            <p class="text-xs text-gray-500">Freelance Developer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 text-sm italic">"I'm more productive than ever! The deadline reminders
+                        are spot on and the UI is intuitive. Highly recommend!"</p>
+                    <div class="text-yellow-400 text-xl">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <div data-aos="fade-down-right"
+                    class="p-6 bg-white border border-gray-200 rounded-xl shadow-md flex flex-col items-start text-start">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 me-3">
+                            <img src="img/image3.png" alt="" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div>
+                            <p class="font-semibold text-sm">Emily Davis</p>
+                            <p class="text-xs text-gray-500">Project Manager, TechCo</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4 text-sm italic">"Seamless integration and the team collaboration tools
+                        are fantastic. We've seen a real boost in efficiency."</p>
+                    <div class="text-yellow-400 text-xl">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <section class="py-20" data-aos="fade-down" id="pricing">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-10">Choose Your Plan</h2>
+            <p class="text-gray-600 max-w-xl mx-auto mb-16">
+                Find the perfect fit for your individual needs or your whole team.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 items-center max-w-5xl mx-auto">
+
+                <div class="p-8 border border-gray-300 rounded-xl shadow-lg flex flex-col h-full bg-white" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4">Free</h3>
+                    <p class="text-5xl font-extrabold mb-1">$0</p>
+                    <p class="text-gray-500 mb-6">/month</p>
+
+                    <ul class="text-start space-y-3 flex-grow">
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-green-500 me-2"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Up to 5 Tasks</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-green-500 me-2"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Basic Task Flow</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-green-500 me-2"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Email Support</li>
+                    </ul>
+
+                    <button
+                        class="mt-8 py-3 px-8 text-teal-600 border border-teal-600 font-semibold rounded-lg hover:bg-teal-50 transition duration-300">
+                        Current Plan
+                    </button>
+                </div>
+
+                <div data-aos="fade-up"
+                    class="p-10 pro-gradient text-white rounded-xl shadow-2xl scale-105 transform flex flex-col h-full relative z-10">
+                    <h3 class="text-2xl font-bold mb-4">Pro</h3>
+                    <p class="text-5xl font-extrabold mb-1">$12</p>
+                    <p class="text-gray-200 mb-6">/month</p>
+
+                    <ul class="text-start space-y-3 flex-grow">
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-white me-2" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Unlimited Tasks</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-white me-2" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Advanced Task Flow</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-white me-2" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Priority Support</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-white me-2" fill="currentColor"
+                                viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Admin Controls</li>
+                    </ul>
+
+                    <button
+                        class="mt-8 py-3 px-8 bg-white text-teal-700 font-bold rounded-lg hover:bg-gray-100 transition duration-300 shadow-lg">
+                        Buy Pro Plan
+                    </button>
+                </div>
+
+                <div data-aos="fade-right" class="p-8 border border-gray-300 rounded-xl shadow-lg flex flex-col h-full bg-white">
+                    <h3 class="text-2xl font-bold mb-4">Team</h3>
+                    <p class="text-5xl font-extrabold mb-1">$25</p>
+                    <p class="text-gray-500 mb-6">/month</p>
+
+                    <ul class="text-start space-y-3 flex-grow">
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-green-500 me-2"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Shared Workspaces</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-green-500 me-2"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Full Collaboration</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-green-500 me-2"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Dedicated Support</li>
+                        <li class="flex items-center text-sm"><svg class="w-4 h-4 text-green-500 me-2"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg> Analytics Reports</li>
+                    </ul>
+
+                    <button
+                        class="mt-8 py-3 px-8 text-teal-600 border border-teal-600 font-semibold rounded-lg hover:bg-teal-50 transition duration-300">
+                        Choose Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <footer data-aos="fade-down" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-2 md:grid-cols-5 gap-8 text-start">
+
+            <div class="col-span-2 md:col-span-1">
+                <div class="flex items-center space-x-2 mb-4">
+                    <svg class="w-6 h-6 text-teal-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zm0 11a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                        </path>
+                    </svg>
+                    <span class="text-xl font-bold">TaskFlow</span>
+                </div>
+                <p class="text-sm text-gray-400">&copy; 2024 TaskFlow, Inc. All rights reserved.</p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-3 text-teal-400">Product</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Features</a></li>
+                    <li><a href="#" class="hover:text-white">Pricing</a></li>
+                    <li><a href="#" class="hover:text-white">Enterprise</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-3 text-teal-400">Support</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">Help Center</a></li>
+                    <li><a href="#" class="hover:text-white">Tutorials</a></li>
+                    <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-3 text-teal-400">Company</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-white">About Us</a></li>
+                    <li><a href="#" class="hover:text-white">Careers</a></li>
+                    <li><a href="#" class="hover:text-white">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-1">
+                <h4 class="font-semibold mb-3 text-teal-400">Social</h4>
+                <div class="flex    space-x-3">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fab fa-linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
